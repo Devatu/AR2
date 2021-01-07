@@ -15,7 +15,7 @@
          <a-assets>
             <a-asset-item
                id="bowser"
-               src="https://raw.githubusercontent.com/Devatu/AR2/main/test.gltf"
+               src="https://raw.githubusercontent.com/Devatu/AR2/main/scene.gltf"
                >
             </a-asset-item>
          </a-assets>
@@ -30,12 +30,14 @@
                id="bowser-model"
                gltf-model="#bowser"
                position="0 0 0"
-               scale="10 10 10"
+               scale="0.5 0.5 0.5"
                class="clickable"
                gesture-handler
                >
             </a-entity>
          </a-marker>
+		 <a-entity id="point_light_1" light="type: point; intensity: 8;" position="0 0 0"></a-entity>
+		 <a-entity id="point_light_2" light="type: point; intensity: 8;" position="5 5 0"></a-entity>
          <a-entity camera></a-entity>
       </a-scene>
    </body>
